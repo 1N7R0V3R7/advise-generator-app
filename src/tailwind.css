@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .divider {
+        @apply bg-[#cee2e9] h-[2px] col-span-3 my-auto rounded-full;
+    }
+}

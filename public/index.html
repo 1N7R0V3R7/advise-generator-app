@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advise Generator App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-[#202632] h-screen flex justify-center items-center" onload="updateAdvice()">
+    <div class="bg-[#313a49] w-[90%] mx-auto rounded-lg px-4 relative text-center max-w-lg" id="card">
+        <div id="card-title" class="text-[#53ffab] py-6 uppercase tracking-widest text-sm">
+            Advice #<span class="" id="advice-id"></span>
+        </div>
+        <div class="text-[#cee2e9] font-bold text-lg" id="card-body">
+            "
+            <span id="advice-body">
+            </span>
+            "
+        </div>
+        <div class="grid grid-cols-7 pt-5 pb-2">
+            <span class="divider"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto text-[#cee2e9] h-5 w-5" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                    clip-rule="evenodd" />
+            </svg>
+            <span class="divider"></span>
+        </div>
+        <button class="bg-[#53ffab] p-2 rounded-full relative -bottom-5 hover:shadow-[0_0_25px_15px_rgba(0,0,0,0.1)] hover:shadow-[#53ffab] delay-250 ease-in-out" onclick="updateAdvice()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 pointer-events-none" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path
+                    d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+            </svg>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
